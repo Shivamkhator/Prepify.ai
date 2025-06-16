@@ -1,0 +1,20 @@
+# CRITICAL: Never commit these
+.env
+.env.local
+.env.production
+*.env
+
+# Django
+*.log
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+
+# IDE
+.vscode/
+.idea/
+
+# Virtual environment  
+venv/
+env/
