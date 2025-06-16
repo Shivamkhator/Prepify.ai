@@ -50,6 +50,7 @@ class AnalysisResult(models.Model):
     grammar_score = models.FloatField(default=0.5)
     relevance_score = models.FloatField(default=0.5)
     overall_score = models.FloatField(default=0.5)
+    feedback = models.TextField(blank=True, null=True)
     
     # Store the full analysis JSON from services
     raw_analysis = models.JSONField(default=dict)

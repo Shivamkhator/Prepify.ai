@@ -14,4 +14,9 @@ urlpatterns = [
     path('api/start-interview/', views.start_interview, name='start_interview'),
     path('api/process-audio/', views.process_audio, name='process_audio'),
     path('api/end-interview/<int:interview_id>/', views.end_interview, name='end_interview'),
+    
+    # Debug endpoints (remove after fixing)
+    path('api/debug-models/', views.debug_models, name='debug_models'),
+    path('api/check-services/', views.check_services, name='check_services'),
+    path('api/check-database/', views.check_database_state, name='check_database'),
 ]
